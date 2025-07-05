@@ -1,0 +1,174 @@
+/* Global reset and layout fix */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Container to center content inside full-width sections */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+/* Section background should cover full width */
+.section {
+  width: 100%;
+}
+
+/* Background color variations */
+.colorful {
+  background-color: #f0f4f8;
+}
+
+.colorful-alt {
+  background-color: #e6edf5;
+}
+
+.partition {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+/* Header */
+.main-header {
+  background: #d1c8ae;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 2rem;
+  color: #002855;
+}
+
+.sub-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.main-nav {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #002855;
+  font-weight: bold;
+}
+
+/* Section Titles */
+.section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/* Right shift and spacing for content */
+.container > p,
+.container > ul,
+.container > .contact {
+  margin-left: 2rem;
+  text-align: left;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 280px;
+  max-width: 100%;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.buttons button {
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #002855;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #002855;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > p,
+  .container > ul,
+  .container > .contact {
+    margin-left: 1rem;
+  }
+}
+
+/* Remove extra spacing from last section */
+.section:last-of-type {
+  margin-bottom: 0;
+}
